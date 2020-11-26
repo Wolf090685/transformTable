@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer table - продажа и изготовление мебели</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+
+            <div class="header__inner">
+                <a class="header-logo" href="#">
+                    <picture class="logo__img">
+                        <source srcset="images/icons/mobile-logo.svg" media="(max-width: 600px)">
+                        <img src="images/icons/logo.svg" alt="Transformer table">
+                    </picture>
+                </a>
+
+                <nav class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="index.html" class="header-menu__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="catalog.html" class="header-menu__link">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="delivery.html" class="header-menu__link">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="about.html" class="header-menu__link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="contacts.html" class="header-menu__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="menu__btn">
+                        <span class="menu__btn-line"></span>
+                        <span class="menu__btn-line"></span>
+                        <span class="menu__btn-line"></span>
+                    </button>
+                </nav>
+
+                <div class="header__info">
+                    <div class="header__info-working-hours">Пн - Пт: 10:00-20:00</div>
+                    <a class="header__info-phone" href="tel:77273272522">+7 727 327 25 22</a>
+                </div>
+
+                <a class="header__btn btn" data-fancybox data-src="#modal-call" href="javascript:;">Заказать
+                    звонок</a>
+
+            </div>
+            <!-- /.header__inner -->
+
+            <!-- Mobile-menu -->
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="index.html">Главная</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="delivery.html">Доставка и оплата</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="about.html">О компании</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="contacts.html">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <div class="mobile-menu__link header__info-working-hours">Пн - Пт: 10:00-20:00</div>
+                </li>
+            </ul>
+            <!-- /.mobile-menu__list -->
+
+        </div>
+        <!-- /.container -->
+    </header>
+    <!--.header -->
+
+    <!-- Error page -->
+    <section class="error-page">
+        <div class="container">
+            <div class="error-page__inner">
+                <h1 class="error-page__title">Упс, страница не найдена
+                </h1>
+                <div class="error-page__code">404</div>
+                <p class="error-page__text">
+                    Запрашиваемая страница не найдена. Возможно она была удалена или в запросе указан неверный адрес
+                    страницы.
+                </p>
+                <a class="error-page__btn btn" href="index.html">На главную</a>
+            </div>
+            <!-- /.error-page__inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.error-page -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top__inner">
+                    <a class="footer-logo" href="#">
+                        <picture class="logo__img">
+                            <source srcset="images/icons/mobile-logo.svg" media="(max-width: 600px)">
+                            <img src="images/icons/logo.svg" alt="Transformer table">
+                        </picture>
+                    </a>
+
+                    <nav class="footer-menu">
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item">
+                                <a class="footer-menu__link" href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-menu__link" href="catalog.html">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-menu__link" href="delivery.html">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-menu__link" href="about.html">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a class="footer-menu__link" href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__info">
+                        <a class="footer__info-phone" href="tel:77273272522">+7 727 327 25 22</a>
+                        <a class="footer__btn btn" data-fancybox data-src="#modal-call"
+                            href="javascript:;">Заказать звонок</a>
+                    </div>
+
+                </div>
+                <!-- /.footer-top__inner -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.footer-top -->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom__inner">
+                    <div class="copyright">Все права защищены 2020</div>
+                    <span class="privacy-policy">
+                        <a class="privacy-policy__link" data-fancybox data-src="#modal-privacy-policy"
+                            href="javascript:;">
+                            Политика конфиденциальности
+                        </a>
+                    </span>
+                    <div class="design">
+                        Design by <a class="design__link" href="#">attention.kz</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.footer-bottom -->
+
+    </footer>
+    <!-- /.footer -->
+
+    <!-- Modal -->
+    <div id="modal-call" class="modal-call">
+        <form class="modal-call__form">
+            <h2 class="modal-call__title">Оставьте заявку, мы вам перезвоним!</h2>
+            <input class="modal-call__input" type="text" placeholder="Имя*">
+            <input class="modal-call__input" type="tel" placeholder="Телефон*">
+            <button class="modal-call__btn btn" type="submit">Заказать звонок</button>
+        </form>
+    </div>
+
+    <div id="modal-privacy-policy" class="modal-privacy-policy">
+        <h2 class="modal-privacy-policy__title">Политика конфиденциальности</h2>
+        <p class="modal-privacy-policy__text">
+            Соблюдение Вашей конфиденциальности важно для нашей компании. Поэтому мы разработали Политику
+            Конфиденциальности, которая описывает, как используется и хранится Ваша информация. Пожалуйста, ознакомьтесь
+            и сообщите нам, если у Вас возникнут какие-либо вопросы.
+        </p>
+        <h3 class="modal-privacy-policy__subtitle">Сбор и использование персональной информации</h3>
+        <p class="modal-privacy-policy__text">
+            Под персональной информацией понимаются данные, которые могут быть использованы для идентификации
+            определенного лица либо связи с ним. От Вас может быть запрошено предоставление персональной информации в
+            любой момент, когда Вы связываетесь с нами.
+        </p>
+        <h3 class="modal-privacy-policy__subtitle">Какую персональную информацию мы собираем</h3>
+        <p class="modal-privacy-policy__text">
+            Когда Вы оставляете заявку на сайте, мы можем собирать различную информацию, включая Ваше имя, номер
+            телефона, адрес электронной почты и т.д.
+        </p>
+        <h3 class="modal-privacy-policy__subtitle">Как мы используем Вашу персональную информацию</h3>
+        <p class="modal-privacy-policy__text">
+            Персональная информация позволяет нам сообщать об уникальных предложениях, акциях и других мероприятиях и
+            ближайших событиях. Время от времени мы можем использовать Вашу персональную информацию для отправки важных
+            уведомлений и сообщений. Мы также можем использовать персональную информацию для внутренних целей:проведения
+            аудита, анализа данных и различных исследований в целях улучшения услуг. Если Вы принимаете участие в
+            розыгрыше призов или конкурсе, мы можем использовать информацию для управления такими программами.
+        </p>
+        <h3 class="modal-privacy-policy__subtitle">Раскрытие информации третьим лицам</h3>
+        <p class="modal-privacy-policy__text">
+            Мы не раскрываем полученную от Вас информацию третьим лицам.
+        </p>
+        <h3 class="modal-privacy-policy__subtitle">Исключения</h3>
+        <p class="modal-privacy-policy__text">
+            В соответствии с законом, судебным порядком, в судебном разбирательстве и/или на основании публичных
+            запросов или запросов от государственных органов на территории РК. Мы также можем раскрывать информацию о
+            Вас, если мы определим, что такое раскрытие необходимо или уместно в целях безопасности, поддержания
+            правопорядка или иных общественно важных случаях. В случае реорганизации, слияния или продажи мы можем
+            передать собираемую нами персональную информацию соответствующему третьему лицу – правопреемнику.
+        </p>
+        <h3 class="modal-privacy-policy__subtitle">Защита персональной информации</h3>
+        <p class="modal-privacy-policy__text">
+            Мы предпринимаем меры предосторожности, включая административные, технические и физические для защиты Вашей
+            персональной информации от утраты, кражи и недобросовестного использования, а также от несанкционированного
+            доступа, раскрытия, изменения и уничтожения.
+        </p>
+        <h3 class="modal-privacy-policy__subtitle">Соблюдение Вашей конфиденциальности на уровне компании</h3>
+        <p class="modal-privacy-policy__text">
+            Чтобы убедиться, что Ваша персональная информация находится в безопасности, мы доводим нормы соблюдения
+            конфиденциальности и безопасности до наших сотрудников и строго следим за исполнением мер соблюдения
+            конфиденциальности.
+        </p>
+    </div>
+
+    <div id="modal-calc" class="modal-calc">
+        <form class="modal-calc__form">
+            <h2 class="modal-calc__title">Рассчитайте стоимость изготовления мебели на заказ</h2>
+
+            <div class="modal-calc__nav-tabs tabs">
+                <a class="modal-calc__nav-tab-item tab-item tab-item--active" href="#" data-id="#modal-tab1">Вид
+                    мебели</a>
+                <a class="modal-calc__nav-tab-item tab-item" href="#" data-id="#modal-tab2">Размеры</a>
+                <a class="modal-calc__nav-tab-item tab-item" href="#" data-id="#modal-tab3">Количество</a>
+            </div>
+
+            <div class="modal-calc__tabs-content-wrapper">
+                <div id="modal-tab1" class="modal-calc__tab-content tab-content tab-content--active">
+                    <ul class="modal-calc__list">
+                        <li class="modal-calc__list-item">
+                            <a class="modal-calc__link" href="#">
+                                Стол
+                            </a>
+                        </li>
+                        <li class="modal-calc__list-item">
+                            <a class="modal-calc__link" href="#">
+                                Стул
+                            </a>
+                        </li>
+                        <li class="modal-calc__list-item">
+                            <a class="modal-calc__link" href="#">
+                                Тумбочка
+                            </a>
+                        </li>
+                        <li class="modal-calc__list-item">
+                            <a class="modal-calc__link" href="#">
+                                Шкаф
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="modal-tab2" class="modal-calc__tab-content tab-content">
+                    здесь будет контент
+                </div>
+                <div id="modal-tab3" class="modal-calc__tab-content tab-content">
+                    здесь будет контент
+                </div>
+            </div>
+            <!-- /.modal-calc__tabs-content-wrapper -->
+
+            <input class="modal-call__input" type="text" placeholder="Имя*">
+            <input class="modal-call__input" type="tel" placeholder="Телефон*">
+            <button class="modal-call__btn btn" type="submit">Рассчитать стоимость</button>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
