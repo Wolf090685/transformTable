@@ -48,4 +48,11 @@ $(function () {
         $('.menu__btn').toggleClass('menu__btn--active');
         $('.mobile-menu__list').toggleClass('mobile-menu__list--active');
     });
+    // btn to-top
+    $('.to-top__link').on('click', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 20
+        }, 600);
+    });
 });
