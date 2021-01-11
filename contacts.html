@@ -174,9 +174,9 @@
         <div class="container">
             <div class="contacts-form__inner">
                 <h3 class="contacts-form__title">Оставьте заявку, мы вам перезвоним!</h3>
-                <form class="contacts-form__form ">
-                    <input class="contacts-form__input modal-call__input" type="text" placeholder="Имя*">
-                    <input class="contacts-form__input modal-call__input" type="tel" placeholder="Телефон*">
+                <form class="contacts-form__form">
+                    <input class="contacts-form__input modal-call__input" type="text" placeholder="Имя*" name="name">
+                    <input class="contacts-form__input modal-call__input" type="tel" placeholder="Телефон*" name="phone">
                     <button class="contacts-form__btn modal-call__btn btn" type="submit">Заказать звонок</button>
                 </form>
             </div>
@@ -271,8 +271,8 @@
     <div id="modal-call" class="modal-call">
         <form class="modal-call__form">
             <h2 class="modal-call__title">Оставьте заявку, мы вам перезвоним!</h2>
-            <input class="modal-call__input" type="text" placeholder="Имя*">
-            <input class="modal-call__input" type="tel" placeholder="Телефон*">
+            <input class="modal-call__input" type="text" placeholder="Имя*" name="name">
+            <input class="modal-call__input" type="tel" placeholder="Телефон*" name="phone">
             <button class="modal-call__btn btn" type="submit">Заказать звонок</button>
         </form>
     </div>
@@ -374,13 +374,15 @@
             </div>
             <!-- /.modal-calc__tabs-content-wrapper -->
 
-            <input class="modal-call__input" type="text" placeholder="Имя*">
-            <input class="modal-call__input" type="tel" placeholder="Телефон*">
+            <input class="modal-call__input" type="text" placeholder="Имя*" name="name">
+            <input class="modal-call__input" type="tel" placeholder="Телефон*" name="phone">
             <button class="modal-call__btn btn" type="submit">Рассчитать стоимость</button>
         </form>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

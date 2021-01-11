@@ -55,4 +55,35 @@ $(function () {
             scrollTop: 20
         }, 600);
     });
+    // Mask for phone input and validate forms
+    $('input[type=tel]').mask("+7 (999) 999-99-99");
+
+    $.validator.methods.cyrillic = function (value, element) {
+        return this.optional (element) || /^[А-Яа-яЁё]+$/.test(value);
+    }
+    
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    cyrillic: true,
+                    minlength: 2
+                },
+                phone: "required"
+            },
+            messages: {
+                name: {
+                    required: "Введите имя",
+                    cyrillic: "В имени допустима только кириллица, без пробелов и знаков препиния",
+                    minlength: jQuery.validator.format("Введите минимум {0} символа!")
+                },
+                phone: "Введите номер телефона"
+            }
+        });
+    }
+
+    validateForms('.modal-call__form');
+    validateForms('.modal-calc__form');
+    validateForms('.contacts-form__form');
 });
